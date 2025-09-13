@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <title>Relatório - Testes de Verificação</title>
+</head>
+<body>
+    <div id="container">
+
+        <div class="flex column going-center">
+            <h2>Testes de Verificação</h2>
+            <a href="">>> código fonte</a>
+        </div>
+
+        <div id="verification-test-unit-test" class="feat-smooth feat-space">
+            <div id="unit-tests-box" class="flex column going-center">
+                <h3 id="unit-tests">Testes Unitários</h3>
+                <img id="img-unit-test" src="./static/img/teste-verificacao-teste-unitario.png" alt="imagem de um relatório de 6 testes feitos com 3 funções">
+            </div>
+        </div>
+
+        <div id="verification-test-static-analysis" class="feat-smooth feat-space">
+            <div id="static-analysis-box" class="flex column going-center">
+                <h3 id="static-analysis">Análise estática</h3>
+                <div class="infos flex column going-left">
+                    <ul class="infos">
+                        <li class="info">O aviso indica a falta da configuração do "type": "module", mas ao fazer isso, os erros que o ESLint mostra, continuam os mesmos</p>
+                        <li class="info">O gerador aleatório, de acordo com o SonarJS, não é seguro para usos em ferramentas de maior importância</p>
+                    </ul>
+                </div>
+                <img id="img-static-analysis" src="./static/img/teste-verificacao-analise-estatica.png" alt="imagem com informações de uma análise estática">
+            </div>
+        </div>
+        
+        <div id="verification-test-code-complexity" class="feat-smooth feat-space">
+            <div id="code-complexity-box" class="flex column going-center">
+                <h3 id="code-complexity">Complexidade de código</h3>
+                
+                <div class="infos flex column going-left">
+                    <ul class="infos">
+                        <li class="info">O gerador aleatório, de acordo com o SonarJS, não é seguro para usos em ferramentas de maior importância</p>
+                        <li class="info">A função "getNumbersArray" possui complexidade maior que a especulada</p>
+                    </ul>
+                </div>
+
+                <div class="flex row going-center">
+                    <p class="cmd">Script usado: </p>
+                    <p class="feat-cmd-used">npm run complexity-functions</p>
+                </div>
+
+                <img id="img-code-complexity-function" src="./static/img/teste-verificacao-complexidade-codigo-a.png" alt="imagem de relatório mostrando informações de complexidade de códigos de um arquivo com funções">
+
+                <div class="infos flex column going-left">
+                    <ul class="infos">
+                        <li class="info">Nos testes, em casos de simulação da chamada de um erro, a ferramenta que mede complexidade aponta uma complexidade nas arrow functions</p>
+                    </ul>
+                </div>
+
+                <div class="flex row going-center">
+                    <p class="cmd">Script usado: </p>
+                    <p class="feat-cmd-used">npm run complexity-tests</p>
+                </div>
+
+                <img id="img-code-complexity-test" src="./static/img/teste-verificacao-complexidade-codigo-b.png" alt="imagem de relatório mostrando informações de complexidade de códigos de um arquivo com testes">
+            </div>
+        </div>
+
+        <div id="verification-test-quality-style" class="feat-smooth feat-space">
+            <div id="quality-style-box" class="flex column going-center">
+                <h3 id="quality-style">Qualidade de estilo</h3>
+                
+                <div class="infos flex column going-left">
+                    <ul class="infos">
+                        <li class="info">Tanto nas funções como nos testes, a ferramenta que garante a qualidade de estilo, formata códigos de acordo com as melhores práticas</p>
+                    </ul>
+                </div>
+
+                <div class="flex row going-center">
+                    <p class="cmd">Script usado: </p>
+                    <p class="feat-cmd-used">npm run correct-functions</p>
+                </div>
+
+                <div class="flex row going-center">
+                    <img id="img-test-quality-style-function-b4" src="./static/img/teste-verificacao-qualidade-de-estilo-a-antes.png" alt="imagem de uma função carente de qualidade de estilo">
+                    <img id="img-test-quality-style-function-after" src="./static/img/teste-verificacao-qualidade-de-estilo-a-depois.png" alt="imagem de uma função após ser submetida à qualidade de estilo">
+                </div>
+                
+                <div class="flex row going-center">
+                    <p class="cmd">Script usado: </p>
+                    <p class="feat-cmd-used">npm run correct-tests</p>
+                </div>
+                
+                <div class="flex row going-center">
+                    <img id="img-test-quality-style-test-b4" src="./static/img/teste-verificacao-qualidade-de-estilo-b-antes.png" alt="imagem de um teste carente de qualidade de estilo">
+                    <img id="img-test-quality-style-test-after" src="./static/img/teste-verificacao-qualidade-de-estilo-b-depois.png" alt="imagem de um teste após ser submetida à qualidade de estilo">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./static/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background: linear-gradient(15deg, rgb(0, 99, 99), rgb(0, 99, 66), rgb(0, 66, 99));
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-flow: column wrap;
+}
+
+.row {
+    flex-flow: row wrap;
+}
+
+.going-center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.going-left {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+a {
+    color: white;
+    padding: .5rem;
+    text-decoration: none;
+    transition: linear .2s;
+}
+
+a:hover {
+    border-radius: .3rem;
+    box-shadow: 0 0 .3rem #ffd;
+    
+}
+
+h2, h3 {
+    background: #222;
+    border: aqua solid 1px;
+    border-radius: .5rem;
+    color: aqua;
+    margin: .5rem;
+    text-shadow: 0 0 .3rem aqua;
+    padding: .5rem 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.feat-space {
+    margin: 2rem 0;
+}
+
+.feat-cmd-used {
+    background: linear-gradient(15deg, rgb(0, 66, 99), rgb(0, 99, 66), rgb(0, 99, 99));
+    border: #222 solid 1px;
+    border-radius: .3rem;
+    color: white;
+    letter-spacing: 1px;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.feat-smooth {
+    transition: linear .5s;
+}
+
+#left-btn {
+    background: rgb(200, 200, 100);
+    border: transparent;
+    border-radius: .1rem;
+    margin: .3rem;
+    padding: 1rem;
+    transition: linear .4s;
+} 
+
+#left-btn:hover {
+  box-shadow: 0 0 .5rem rgb(200, 200, 100);
+}
+
+li {
+    margin: .7rem auto;
+    width: 50%;
+}
+
+#right-btn {
+    background: rgb(155, 255, 55);
+    border: transparent;
+    border-radius: .1rem;
+    margin: .3rem;
+    padding: 1rem;
+    transition: linear .4s;
+} 
+
+#right-btn:hover {
+  box-shadow: 0 0 .5rem rgb(155, 255, 55);
+}
+
+img {
+    border-radius: .3rem;
+    margin: 0 .5rem;
+}
+
+#img-unit-test {
+    height: 20%;
+    width: 30%;
+}
+
+#img-static-analysis {
+    height: 50%;
+    width: 50%;
+}
+
+#img-code-complexity-function {
+    height: 50%;
+    width: 50%;
+}
+
+#img-code-complexity-test {
+    height: 50%;
+    width: 50%;
+}
+
+#img-test-quality-style-test-b4 {
+  height: 80%;
+  width: 40%;
+}
+
+#img-test-quality-style-test-after {
+  height: 80%;
+  width: 50%;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "atividade-091125-testes-verificacao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix",
+    "complexity-functions": "eslint functions.js --rule 'complexity: [warn, 1]'",
+    "complexity-tests": "eslint main.test.js --rule 'complexity: [warn, 1]'",
+    "correct-functions": "npx prettier --write functions.js",
+    "correct-tests": "npx prettier --write main.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.35.0",
+    "eslint-plugin-sonarjs": "^3.0.5",
+    "jest": "^30.1.3",
+    "prettier": "^3.6.2"
+  },
+  "type": "module"
+}
